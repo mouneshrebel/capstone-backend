@@ -28,11 +28,15 @@ try {
     console.log ("error:" + error)
 }
 
-app.get('/', (req, res) =>{
+app.get("/getdata", (req, res) =>{
  res.send ("hello mounesh!!!");
 
 
 })
 
 
-app.listen (4000);
+
+app.listen (4000,()=>{
+    console.log("app is lising port 4000")
+});
+
